@@ -1,7 +1,6 @@
 import styled from "styled-components";
-import { Link as LinkR } from "react-router-dom";
 
-export const ServicesContainer = styled.div`
+export const CaseStudiesContainer = styled.div`
   padding: 150px 0;
   width: 80%;
   max-width: 1200px;
@@ -9,15 +8,19 @@ export const ServicesContainer = styled.div`
   display: flex;
   flex-direction: column;
   background: #fff;
+
+  @media screen and (max-width: 550px) {
+    padding-top: 0;
+  }
 `;
 
-export const ServicesWrapper = styled.div`
+export const CaseStudiesWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 `;
 
-export const ServicesCard = styled.div`
+export const CaseStudiesCard = styled.div`
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -43,7 +46,7 @@ export const ServicesCard = styled.div`
   }
 `;
 
-export const ServicesIcon = styled.img`
+export const CaseStudiesIcon = styled.img`
   height: 300px;
   width: 100%;
   margin-bottom: 10px;
@@ -60,7 +63,7 @@ export const TopLine = styled.p`
   margin-bottom: 16px;
 `;
 
-export const ServicesH1 = styled.h1`
+export const CaseStudiesH1 = styled.h1`
   margin-bottom: 64px;
   font-size: 1.8em;
   line-height: 1.4;
@@ -72,27 +75,27 @@ export const ServicesH1 = styled.h1`
   }
 `;
 
-export const ServicesH2 = styled.h2`
+export const CaseStudiesH2 = styled.h2`
   font-size: 1.1rem;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-right: 20px;
 `;
 
-export const ServicesP = styled.p`
+export const CaseStudiesP = styled.p`
   font-size: 0.8em;
   color: #555;
   font-weight: bold;
   margin-top: 20px;
 `;
 
-export const ServicesUl = styled.ul`
+export const CaseStudiesUl = styled.ul`
   margin-top: 20px;
   font-size: 0.8em;
   padding-left: 17px;
 `;
 
-export const ServicesLi = styled.li`
+export const CaseStudiesLi = styled.li`
   font-size: 1.1em;
   color: #555;
   font-weight: bold;
@@ -100,15 +103,13 @@ export const ServicesLi = styled.li`
 `;
 
 export const ButtonWrapper = styled.div`
-  margin-top: 30px;
+  margin-top: 80px;
   display: flex;
   justify-content: center;
 
   @media screen and (max-width: 600px) {
+    width: 220px;
     flex-direction: column;
+    margin: 0 auto;
   }
-`;
-
-export const Button = styled(LinkR)`
-  background: #fff;
 `;

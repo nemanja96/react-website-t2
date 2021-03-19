@@ -49,43 +49,31 @@ const Navbar = ({ toggle }) => {
           <NavMenu>
             <NavItem>
               <NavLinks
-                to="about"
+                to="what-we-do"
                 smooth={true}
                 duration={500}
                 spy={true}
                 exact="true"
                 offset={-80}
               >
-                About Us
+                What We Do
               </NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks
-                to="discover"
+                to="how-we-work"
                 smooth={true}
                 duration={500}
                 spy={true}
                 exact="true"
                 offset={-80}
               >
-                Our Services
+                How We Work
               </NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks
-                to="services"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-80}
-              >
-                Our Team
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks
-                to="signup"
+                to="case-studies"
                 smooth={true}
                 duration={500}
                 spy={true}
@@ -97,26 +85,14 @@ const Navbar = ({ toggle }) => {
             </NavItem>
             <NavItem>
               <NavLinks
-                to="signup"
+                to="our-team"
                 smooth={true}
                 duration={500}
                 spy={true}
                 exact="true"
                 offset={-80}
               >
-                Our Blog
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks
-                to="signup"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-80}
-              >
-                Contact Us
+                Our Team
               </NavLinks>
             </NavItem>
           </NavMenu>

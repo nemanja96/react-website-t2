@@ -9,7 +9,7 @@ import {
   Heading,
   TextWrapper,
   TextWrap,
-  Subtitle,
+  Text,
   BtnWrap,
   ImageWrap,
   Img,
@@ -17,27 +17,21 @@ import {
   Card,
   CardSubtitle,
   CardTitle,
-} from "./InfoElements";
+} from "./WhatWeDoElements";
 import { Button } from "../ButtonElement";
 
-const InfoSection = ({
-  imgStart,
+const WhatWeDoSection = ({
   topLine,
-  lightText,
   headLine,
   darkText,
   description,
   buttonLabel,
   img,
   img2,
-  alt,
   primary,
-  dark,
-  dark2,
-  src,
 }) => {
   return (
-    <Container>
+    <Container id="what-we-do">
       <InfoContainer>
         <HeadWrapper>
           <TopLine>
@@ -47,26 +41,14 @@ const InfoSection = ({
             </IconContext.Provider>
             {topLine}
           </TopLine>
-          <Heading lightText={lightText}>{headLine}</Heading>
+          <Heading>{headLine}</Heading>
         </HeadWrapper>
         <TextWrapper>
           <TextWrap>
-            <Subtitle darkText={darkText}>{description}</Subtitle>
-            <Subtitle darkText={darkText}>{description}</Subtitle>
+            <Text darkText={darkText}>{description}</Text>
+            <Text darkText={darkText}>{description}</Text>
             <BtnWrap>
-              <Button
-                to="home"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-80}
-                primary={primary ? 1 : 0}
-                dark={dark ? 1 : 0}
-                dark2={dark2 ? 1 : 0}
-              >
-                {buttonLabel}
-              </Button>
+              <Button primary={primary ? 1 : 0}>{buttonLabel}</Button>
             </BtnWrap>
           </TextWrap>
           <ImageWrap>
@@ -113,4 +95,4 @@ const InfoSection = ({
   );
 };
 
-export default InfoSection;
+export default WhatWeDoSection;

@@ -11,14 +11,11 @@ export const InfoContainer = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   color: #fff;
-
-  @media screen and (max-width: 768px) {
-    padding: 100px 0;
-  }
 `;
 
 export const TextWrapper = styled.div`
   display: flex;
+  justify-content: space-between;
 
   @media screen and (max-width: 820px) {
     flex-direction: column;
@@ -26,7 +23,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TextWrap = styled.div`
-  width: 50%;
+  width: 48%;
 
   @media screen and (max-width: 820px) {
     width: 100%;
@@ -70,7 +67,7 @@ export const BtnWrap = styled.div`
 `;
 
 export const ImageWrap = styled.div`
-  width: 50%;
+  width: 48%;
 
   @media screen and (max-width: 820px) {
     width: 100%;

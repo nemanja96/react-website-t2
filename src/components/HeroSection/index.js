@@ -1,19 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import { IconContext } from "react-icons";
 import { FaSignature } from "react-icons/fa";
+import { animateScroll as scroll } from "react-scroll";
 import {
   HeroContainer,
-  HeroBtn,
-  ArrowImg,
-  HeroBtnWrapper,
-  HeroBtnTitle,
   HeroContent,
   HeroH2,
   HeroH1,
+  HeroBtnTitle,
   HeroImages,
+  HeroBtnWrapper,
+  HeroBtn,
+  ArrowImg,
   HeroImage,
   Img,
 } from "./HeroElements";
+
 const HeroSection = ({
   src1,
   alt1,
@@ -45,7 +47,14 @@ const HeroSection = ({
       </HeroContent>
       <HeroImages>
         <HeroBtnWrapper>
-          <HeroBtn>
+          <HeroBtn
+            to="what-we-do"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
+          >
             <ArrowImg src={arrow} />
           </HeroBtn>
           <HeroBtnTitle>Discover Skilly</HeroBtnTitle>

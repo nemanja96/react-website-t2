@@ -11,10 +11,6 @@ export const InfoContainer = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   color: #fff;
-
-  @media screen and (max-width: 768px) {
-    padding: 100px 0;
-  }
 `;
 
 export const HeadWrapper = styled.div`
@@ -45,7 +41,7 @@ export const Heading = styled.h1`
   }
 `;
 
-export const TextWrapper = styled.p`
+export const TextWrapper = styled.div`
   display: flex;
   justify-content: space-between;
 
@@ -62,7 +58,7 @@ export const TextWrap = styled.div`
   }
 `;
 
-export const Subtitle = styled.p`
+export const Text = styled.p`
   max-width: 440px;
   margin-bottom: 30px;
   font-weight: bold;

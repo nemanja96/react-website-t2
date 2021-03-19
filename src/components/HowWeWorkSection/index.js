@@ -8,25 +8,18 @@ import {
   TextWrap,
   TopLine,
   Heading,
-  Subtitle,
-  BtnWrap,
   ImageWrap,
-  Img,
-} from "./TeamElements";
+  BtnWrap,
+  Path,
+  Problem,
+  Line,
+  Results,
+} from "./HowWeWorkElements";
 import { Button } from "../ButtonElement";
 
-const TeamSection = ({
-  topLine,
-  headLine,
-  darkText,
-  description,
-  buttonLabel,
-  img,
-  img2,
-  primary,
-}) => {
+const HowWeWorkSection = ({ topLine, headLine, buttonLabel, primary }) => {
   return (
-    <Container id="our-team">
+    <Container id="how-we-work">
       <InfoContainer>
         <TextWrapper>
           <TextWrap>
@@ -38,19 +31,21 @@ const TeamSection = ({
               {topLine}
             </TopLine>
             <Heading>{headLine}</Heading>
-            <Subtitle darkText={darkText}>{description}</Subtitle>
+          </TextWrap>
+          <ImageWrap>
             <BtnWrap>
               <Button primary={primary ? 1 : 0}>{buttonLabel}</Button>
             </BtnWrap>
-          </TextWrap>
-          <ImageWrap>
-            <Img src={img} />
-            <Img src={img2} />
           </ImageWrap>
         </TextWrapper>
+        <Path>
+          <Problem>Problem</Problem>
+          <Line />
+          <Results>Results</Results>
+        </Path>
       </InfoContainer>
     </Container>
   );
 };
 
-export default TeamSection;
+export default HowWeWorkSection;
